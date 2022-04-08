@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,400;1,500;1,600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navigation{
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+
+.navigation.active{
+    left: 0;
+}
+
+.banner{
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+
+.cover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.navLink{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.navLink ul{
+    position: relative;
+    width: 100%;    
+}
+
+.navLink ul li {
+    position: relative;
+    list-style: none;
+}
+
+.navLink ul li a {
+    position: relative;
+    color: #fff;
+    font-size: 2em;
+    font-weight: 500;
+    text-decoration: none;
+    margin: 5px 0;
+    margin-left: 100px;
+    display: inline-block;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.navLink ul li a:hover{
+    color: rgb(48, 158, 26);
+}
+
+.sec{
+    position: relative;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    transition: 1s;
+}
+
+.sec.active{
+    left: 100%;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.toggle{
+    position: relative;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.toggle.active{
+    left: -200px;
+}
+
+.toggle::before{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background: #777;
+    transform: translateY(-6px);
+    transition: 0.5s;
+}
+
+.toggle::after{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background: #777;
+    transform: translateY(6px) ;
+    transition: 0.5s;
+}
+
+.toggle.active::before{
+    transform: translateY(0px) rotate(45deg);
+    background: #fff;
+}
+
+.toggle.active::after{
+    transform: translateY(0px) rotate(-45deg);
+    background: #fff;
+
+}
+
+.btn{
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    background: rgb(48, 158, 26);
+    color: #fff;
+    font-weight: 500;
+    border-radius: 4px;
+    letter-spacing: 1px;
+}
