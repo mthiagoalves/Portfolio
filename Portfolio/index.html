@@ -3,59 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
     <link rel="stylesheet" href="/style.css">
     <title>Portfolio</title>
-
 </head>
 
     <body>
 
-        <div class="navigation">
-            <div class="banner">
-                <img src="/img/banner.jpg" class="cover">
-            </div>
-            <div class="navLink">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-        </div>
+        <div class="toggle" onclick="toggleMenu()"></div>
 
-        <section class="sec">
-            <header>
-                <div class="toggle"></div>
-                <a href="#" class="btn">Hire Me</a>
-            </header>
+        <section class="banner" id="home">
 
-            <div class="imgBx">
-                <img src="/img/program.webp" class="cover">
+            <div class="imgSidebar">
+                <img src="/img/banner.jpg" alt="">
             </div>
-            <div class="content">
-                <h2>Hi, I am<br><span>Thiago Alves</span></bt></h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit, harum vel. Ipsam esse maxime quia quisquam eligendi sapiente illo libero!</p>
-                <a href="#" class="btn">Download My CV</a>
-            </div>
-
-            <footer>
+            
+            <div class="contentBx">
+                <h5 class="logoText">My Portfolio</h5>
+                <div>
+                    <h4><span>Hello</span>, I'm</h4>
+                    <h2>Thiago Alves</h2>
+                    <h4>i'm FullStack JavaScript Developer Junior</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus, earum! Natus pariatur modi, autem obcaecati temporibus in debitis sequi, eum saepe, quod hic repellendus vel doloremque recusandae. Sapiente eaque pariatur accusantium sed excepturi? Corporis sed eos ab accusantium dicta modi nulla officia tenetur perspiciatis eum!</p>
+                    <a href="#" class="btn">About Me</a>
+                </div>
 
                 <ul class="sci">
-                    <li><a href="#"><img src="/img/facebook.png"></a></li>
-                    <li><a href="#"><img src="/img/instagram.png"></a></li>
-                    <li><a href="#"><img src="/img/twitter.png"></a></li>
-                    <li><a href="#"><img src="/img/linkedin.png"></a></li>
+                    <li><a href="#"><img src="/img/linkedin.png" alt=""></a></li>
+                    <li><a href="#"><img src="/img/instagram.png" alt=""></a></li>
+                    <li><a href="#"><img src="/img/twitter.png" alt=""></a></li>
+                    <li><a href="#"><img src="/img/facebook.png" alt=""></a></li>
                 </ul>
-                <p class="copyrightText">Direitos a Thiago Alves ©2022</p>
 
-            </footer>
+            </div>
         </section>
 
+        <section class="about" id="about">
+            <div class="title white">
+                <h2>About Us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias autem error quas itaque, in fugit.</p>
+            </div>
+        </section>
 
-        <script src="script.js"></script>
+        <div class="sidebar">
+
+            <ul class="menu">
+                <li><a href="#about">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+        </div>
+
+
+        <script src="/script.js"></script>
     </body>
-
 </html>
