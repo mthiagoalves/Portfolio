@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 .toggle{
@@ -220,4 +221,42 @@ p{
 
 .about{
     background: #000;
+}
+
+.about .content{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.about .content .textBx{
+    min-width: 60%;
+    width: 60%;
+}
+
+.about .content .textBx p{
+    color: #fff;
+}
+
+.about .content .imgBx{
+    margin-left: 40px;
+}
+
+.about .content .imgBx img{
+    max-width: 60%;
+}
+
+.knowledge .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.knowledge .content .knowledgeBx{
+    padding: 40px 20px;
+    max-width: 340px;
+    margin: 20px;
+    transition: 0.5s;
+    background: #f5f5f5;
 }

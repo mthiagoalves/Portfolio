@@ -1,63 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    <link rel="stylesheet" href="/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
     <title>Portfolio</title>
-</head>
+  </head>
 
-    <body>
+  <body>
+    <div class="toggle" onclick="toggleMenu()"></div>
 
-        <div class="toggle" onclick="toggleMenu()"></div>
+    <section class="banner" id="home">
+      <div class="imgSidebar">
+        <img src="/img/banner.jpg" alt="" />
+      </div>
 
-        <section class="banner" id="home">
-
-            <div class="imgSidebar">
-                <img src="/img/banner.jpg" alt="">
-            </div>
-            
-            <div class="contentBx">
-                <h5 class="logoText">My Portfolio</h5>
-                <div>
-                    <h4><span>Hello</span>, I'm</h4>
-                    <h2>Thiago Alves</h2>
-                    <h4>i'm FullStack JavaScript Developer Junior</h4>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus, earum! Natus pariatur modi, autem obcaecati temporibus in debitis sequi, eum saepe, quod hic repellendus vel doloremque recusandae. Sapiente eaque pariatur accusantium sed excepturi? Corporis sed eos ab accusantium dicta modi nulla officia tenetur perspiciatis eum!</p>
-                    <a href="#" class="btn">About Me</a>
-                </div>
-
-                <ul class="sci">
-                    <li><a href="#"><img src="/img/linkedin.png" alt=""></a></li>
-                    <li><a href="#"><img src="/img/instagram.png" alt=""></a></li>
-                    <li><a href="#"><img src="/img/twitter.png" alt=""></a></li>
-                    <li><a href="#"><img src="/img/facebook.png" alt=""></a></li>
-                </ul>
-
-            </div>
-        </section>
-
-        <section class="about" id="about">
-            <div class="title white">
-                <h2>About Us</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias autem error quas itaque, in fugit.</p>
-            </div>
-        </section>
-
-        <div class="sidebar">
-
-            <ul class="menu">
-                <li><a href="#about">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Work</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-
+      <div class="contentBx">
+        <h5 class="logoText">My Portfolio</h5>
+        <div>
+          <h4><span>Hello</span>, I'm</h4>
+          <h2>Thiago Alves</h2>
+          <h4>i'm FullStack JavaScript Developer Junior</h4>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus,
+            earum! Natus pariatur modi, autem obcaecati temporibus in debitis
+            sequi, eum saepe, quod hic repellendus vel doloremque recusandae.
+            Sapiente eaque pariatur accusantium sed excepturi? Corporis sed eos
+            ab accusantium dicta modi nulla officia tenetur perspiciatis eum!
+          </p>
+          <a href="#" class="btn">About Me</a>
         </div>
 
+        <ul class="sci">
+          <li>
+            <a
+              href="https://www.linkedin.com/in/thiago-alves-b05ab2b0"
+              target="_blank"
+              ><img src="/img/linkedin.png" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/mthiagoalves" target="_blank"
+              ><img src="/img/instagram.png" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/iSuiciide" target="_blank"
+              ><img src="/img/twitter.png" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="https://web.facebook.com/M.Thiago.Alves" target="_blank"
+              ><img src="/img/facebook.png" alt=""
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </section>
 
-        <script src="/script.js"></script>
-    </body>
+    <section class="about" id="about">
+      <div class="title white">
+        <h2>About Us</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+          autem error quas itaque, in fugit.
+        </p>
+      </div>
+      <div class="content">
+        <div class="textBx">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum est
+            culpa, sint autem eaque ducimus deleniti fugit atque architecto
+            earum illo assumenda, corrupti, aspernatur reiciendis. Laborum
+            cupiditate et explicabo culpa maiores? Explicabo numquam omnis
+            molestias nesciunt. Fugiat reprehenderit quidem repudiandae enim
+            maiores sapiente consectetur? Qui repudiandae molestiae laboriosam
+            consequatur illo?<br /><br />Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit. Officiis beatae dolores, nihil officia sequi esse
+            quae distinctio explicabo ut! Esse quisquam eos ducimus culpa
+            dignissimos id iure dolor nemo molestiae laborum dolorum dolores,
+            sint tenetur perspiciatis laudantium consectetur quidem obcaecati?
+            Consequatur deleniti voluptatem pariatur laboriosam expedita
+            voluptates animi voluptate neque?
+          </p>
+        </div>
+        <div class="imgBx">
+          <img src="/img/20220209_220333.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="knowledge" id="knowledge">
+      <div class="title">
+        <h2>Knowledges</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga
+          nesciunt animi saepe recusandae praesentium unde possimus rerum,
+          molestias fugiat ea iusto facere minima ducimus repellat voluptatibus
+          nostrum dignissimos nam? Error vero eligendi necessitatibus sit iusto
+          ad nostrum voluptatibus aperiam modi. Corrupti maiores voluptate iure
+          enim!
+        </p>
+      </div>
+      <div class="content">
+        <div class="knowledgeBx">
+          <img src="/img/js.png" />
+          <h2>JavaScript</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed odio praesentium totam quod, aut hic?</p>
+        </div>
+        <div class="knowledgeBx">
+            <img src="/img/node.png" />
+            <h2>Node.Js</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed odio praesentium totam quod, aut hic?</p>
+          </div>
+          <div class="knowledgeBx">
+            <img src="/img/html.png" />
+            <h2>HTML5</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed odio praesentium totam quod, aut hic?</p>
+          </div>
+          <div class="knowledgeBx">
+            <img src="/img/css.png" />
+            <h2>CSS3</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed odio praesentium totam quod, aut hic?</p>
+          </div>
+          <div class="knowledgeBx">
+            <img src="/img/db.png" />
+            <h2>Database</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed odio praesentium totam quod, aut hic?</p>
+          </div>
+      </div>
+    </section>
+
+    <div class="sidebar">
+      <ul class="menu">
+        <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#knowledge" onclick="toggleMenu()">Knowledge</a></li>
+        <li><a href="#Work" onclick="toggleMenu()">Work</a></li>
+        <li><a href="#Contact" onclick="toggleMenu()">Contact</a></li>
+      </ul>
+    </div>
+
+    <script src="/script.js"></script>
+  </body>
 </html>
