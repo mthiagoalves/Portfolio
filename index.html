@@ -4,25 +4,29 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/Portfolio/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
     <title>Portfolio</title>
   </head>
 
   <body>
     <div class="toggle" onclick="toggleMenu()"></div>
+    <div class="container-lg">
+      <a class="eng" onclick="translationEng()">ENG</a>
+      <a class="pt" onclick="translationPt()">PT</a>
+    </div>
 
     <section class="banner" id="home">
       <div class="imgSidebar">
-        <img src="/Portfolio/assets/img/banner.jpg" alt="" />
+        <img src="/assets/img/banner.jpg" alt="" />
       </div>
 
       <div class="contentBx">
-        <h5 class="logoText">Portfolio</h5>
+        <h5 class="logoText">Portifólio</h5>
         <div>
-          <h4><span>Olá</span>, me chamo</h4>
+          <h4 id="text1">Olá, me chamo</h4>
           <h2>Thiago Alves</h2>
-          <h4>FullStack JavaScript Developer Junior</h4>
-          <p>
+          <h4 id="text2">FullStack JavaScript Developer Junior</h4>
+          <p id="text3">
             Estou começando a minha carreira como desenvolvedor e fiz esse
             portifólio para contar um pouco sobre mim e mostrar meus
             conhecimentos e projetos que desenvolvi até hoje durante minha
@@ -41,22 +45,22 @@
             <a
               href="https://www.linkedin.com/in/thiago-alves-b05ab2b0"
               target="_blank"
-              ><img src="/Portfolio/assets/img/linkedin.png" alt=""
+              ><img src="/assets/img/linkedin.png" alt=""
             /></a>
           </li>
           <li>
             <a href="https://www.instagram.com/mthiagoalves" target="_blank"
-              ><img src="/Portfolio/assets/img/instagram.png" alt=""
+              ><img src="/assets/img/instagram.png" alt=""
             /></a>
           </li>
           <li>
             <a href="https://twitter.com/iSuiciide" target="_blank"
-              ><img src="/Portfolio/assets/img/twitter.png" alt=""
+              ><img src="/assets/img/twitter.png" alt=""
             /></a>
           </li>
           <li>
             <a href="https://web.facebook.com/M.Thiago.Alves" target="_blank"
-              ><img src="/Portfolio/assets/img/facebook.png" alt=""
+              ><img src="/assets/img/facebook.png" alt=""
             /></a>
           </li>
         </ul>
@@ -65,12 +69,12 @@
 
     <section class="about" id="about">
       <div class="title white">
-        <h2>Sobre mim</h2>
-        <p>Um pouco sobre mim e sobre como entrei na programação.</p>
+        <h2 id="about-me">Sobre mim</h2>
+        <p id="text4">Um pouco sobre mim e sobre como entrei na programação.</p>
       </div>
       <div class="content">
         <div class="textBx">
-          <p>
+          <p id="textBx">
             Me chamo Marcos Thiago Alves da Silva, mas a maioria das pessoas me
             chamam pelo segudo nome. Natural do Rio de Janeiro. Sempre fui
             apegado com jogos eletronicos, mas nunca olhei com outros olhos, com
@@ -92,57 +96,55 @@
           </p>
         </div>
         <div class="imgBx">
-          <img src="/Portfolio/assets/img/20220209_220333.jpg" alt="" />
+          <img src="/assets/img/20220209_220333.jpg" alt="" />
         </div>
       </div>
     </section>
 
     <section class="knowledge" id="knowledge">
       <div class="title">
-        <h2>Conhecimentos</h2>
-        <p>
-          Aqui temos um pequeno demonstrativo dos conhecimentos que adquiri até
-          agora. Não são muitos, mas ainda estou trilhando essa estrada, me
-          aprimorando e aprendendo cada dia mais.
+        <h2 id="knowledgetittle">Conhecimentos</h2>
+        <p id="textKnow">
+          Aqui vou passar as tecnologias que tenho conhecimento.
         </p>
       </div>
       <div class="content">
         <div class="knowledgeBx">
-          <img src="/Portfolio/assets/img/js.png" />
+          <img src="/assets/img/js.png" />
           <h2>JavaScript</h2>
-          <p>
+          <p id="javascript">
             Nivel: Intermediario<br /><br />Desenvolvi meus projetos inclusive
-            esse portifólio usando O JavaScript
+            esse portifólio usando o JavaScript
           </p>
         </div>
         <div class="knowledgeBx">
-          <img src="/Portfolio/assets/img/node.png" />
+          <img src="/assets/img/node.png" />
           <h2>Node.Js</h2>
-          <p>
+          <p id="node">
             Nivel: Intermediario<br /><br />Atualmente estou usando o Node.Js no
             back-end de todos os meus projetos.
           </p>
         </div>
         <div class="knowledgeBx">
-          <img src="/Portfolio/assets/img/html.png" />
+          <img src="/assets/img/html.png" />
           <h2>HTML5</h2>
-          <p>
+          <p id="html">
             Nivel: Intermediario<br /><br />Usando o HTML5 eu desenvolvi toda
             estrutura front-end dos meus projetos.
           </p>
         </div>
         <div class="knowledgeBx">
-          <img src="/Portfolio/assets/img/css.png" />
+          <img src="/assets/img/css.png" />
           <h2>CSS3</h2>
-          <p>
+          <p id="css">
             Nivel: Intermediario<br /><br />Junto com o HTML, tenho vindo usado
             o CSS3 puro para fazer meus projetos até o momento.
           </p>
         </div>
         <div class="knowledgeBx">
-          <img src="/Portfolio/assets/img/db.png" />
+          <img src="/assets/img/db.png" />
           <h2>Database</h2>
-          <p>
+          <p id="db">
             Nivel: Iniciante<br /><br />Alguns dos meus projetos foi usando o
             banco de dados, PostgreSQL e MongoDb juntamente com o back-end. E
             consumo de API.
@@ -153,8 +155,8 @@
 
     <section class="work" id="work">
       <div class="title">
-        <h2>Projetos Recentes</h2>
-        <p>
+        <h2 id="title-works">Projetos Recentes</h2>
+        <p id="works-text">
           Aqui tem os meus principais projetos até o momento. Selecionei somente
           alguns, os demais pode ser acessado atravez do meus
           <a
@@ -167,10 +169,10 @@
       <div class="content">
         <div class="workBx">
           <div class="imgBx">
-            <img src="/Portfolio/assets/img/projeto1.png" alt="" />
+            <img src="/assets/img/projeto1.png" alt="" />
           </div>
           <div class="textBx">
-            <h3>
+            <h3 id="proj1">
               <a
                 href="https://mthiagoalves.github.io/Projeto01_Mod02/"
                 target="_blank"
@@ -182,10 +184,10 @@
         </div>
         <div class="workBx">
           <div class="imgBx">
-            <img src="/Portfolio/assets/img/projeto3.png" alt="" />
+            <img src="/assets/img/projeto3.png" alt="" />
           </div>
           <div class="textBx">
-            <h3>
+            <h3 id="proj2">
               <a
                 href="https://pokedex-blue-proj-02.herokuapp.com"
                 target="_blank"
@@ -197,10 +199,10 @@
         </div>
         <div class="workBx">
           <div class="imgBx">
-            <img src="/Portfolio/assets/img/projeto2.png" alt="" />
+            <img src="/assets/img/projeto2.png" alt="" />
           </div>
           <div class="textBx">
-            <h3>
+            <h3 id="proj3">
               <a
                 href="https://mod2-proj-final.herokuapp.com"
                 target="_blank"
@@ -212,10 +214,10 @@
         </div>
         <div class="workBx">
           <div class="imgBx">
-            <img src="/Portfolio/assets/img/projeto4.png" alt="" />
+            <img src="/assets/img/projeto4.png" alt="" />
           </div>
           <div class="textBx">
-            <h3>
+            <h3 id="proj4">
               <a
                 href="https://github.com/mthiagoalves/projeto01_mod03"
                 target="_blank"
@@ -227,10 +229,10 @@
         </div>
         <div class="workBx">
           <div class="imgBx">
-            <img src="/Portfolio/assets/img/projeto5.png" alt="" />
+            <img src="/assets/img/projeto5.png" alt="" />
           </div>
           <div class="textBx">
-            <h3>
+            <h3 id="proj5">
               <a
                 href="https://mthiagoalves.github.io/Slideshow/"
                 target="_blank"
@@ -245,8 +247,8 @@
 
     <section class="contact" id="contact">
       <div class="title white">
-        <h2>Contatos</h2>
-        <p>
+        <h2 id="title-contact">Contatos</h2>
+        <p id="contact-text">
           Se achou interessante todo o conteudo acima e sobre mim também e
           quiser entrar em contato comigo esses são meus contatos.
         </p>
@@ -254,22 +256,22 @@
       <div class="contactForm">
         <div class="row">
           <div class="col">
-            <p>> Meu número: +55 24 98113-1355 <</p>
+            <p id="phone">> Meu número: +55 24 98113-1355 <</p>
           </div>
           <div class="col"></div>
         </div>
         <div class="row">
           <div class="col">
-            <p>> E-mail: m.thiago.alves@live.com <</p>
+            <p id="email">> E-mail: m.thiago.alves@live.com <</p>
           </div>
         </div>
         <div class="row">
           <div class="col">
-            <p>
+            <p id="linkedin">
               <a
                 href="https://www.linkedin.com/in/thiago-alves-b05ab2b0"
                 target="_blank"
-                style="text-decoration: none; color: #fff;"
+                style="text-decoration: none; color: #fff"
               >
                 > Meu linkedin <
               </a>
@@ -300,6 +302,6 @@
       </ul>
     </div>
 
-    <script src="/Portfolio/assets/js/script.js"></script>
+    <script src="/assets/js/script.js"></script>
   </body>
 </html>
