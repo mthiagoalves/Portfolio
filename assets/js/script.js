@@ -84,6 +84,11 @@ translationEng = () => {
 };
 
 translationPt = () => {
+  homeBar.textContent = "Inicio";
+  aboutBar.textContent = "Sobre";
+  knowledgeBar.textContent = "Conhecimentos";
+  workBar.textContent = "Projetos Recentes";
+  contactBar.textContent = "Contato";
   logoText.textContent = "Portifólio";
   text1.textContent = "Olá, me chamo";
   text2.textContent = "FullStack JavaScript Developer Junior";
