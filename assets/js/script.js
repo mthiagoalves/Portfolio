@@ -20,6 +20,7 @@ const node = document.querySelector("#node");
 const html = document.querySelector("#html");
 const css = document.querySelector("#css");
 const db = document.querySelector("#db");
+const react = document.querySelector("#react");
 const titleWorks = document.querySelector("#title-works");
 const worksText = document.querySelector("#works-text");
 const proj1 = document.querySelector("#proj1");
@@ -31,8 +32,18 @@ const contactText = document.querySelector("#contact-text");
 const titleContact = document.querySelector("#title-contact");
 const phone = document.querySelector("#phone");
 const linkedin = document.querySelector("#linkedin");
+const homeBar = document.querySelector("#home-bar");
+const aboutBar = document.querySelector("#about-bar");
+const knowledgeBar = document.querySelector("#knowledge-bar");
+const workBar = document.querySelector("#work-bar");
+const contactBar = document.querySelector("#contact-bar");
 
 translationEng = () => {
+  homeBar.textContent = "Home";
+  aboutBar.textContent = "About";
+  knowledgeBar.textContent = "Knowledges";
+  workBar.textContent = "Recents Projects";
+  contactBar.textContent = "My contacts";
   logoText.textContent = "Portfolio";
   text1.textContent = "Hello, i'm";
   text2.textContent = "i'm FullStack JavaScript Developer Junior";
@@ -56,7 +67,9 @@ translationEng = () => {
     "Level: Intermediate<br /><br />Along with HTML, I have been using pure CSS3 to make my projects so far.";
   db.innerHTML =
     "Level: Beginner<br /><br />Some of my projects were using the database, PostgreSQL and MongoDb along with the backend. And API consumption.";
-  titleWorks.textContent = "Recents Works";
+  react.innerHTML =
+    "Level: Beginner<br /><br />I'm starting my studies in react currently.";
+  titleWorks.textContent = "Recents Projects";
   worksText.innerHTML = `Here are my main projects so far. I only selected some, the others can be accessed through my<a href="https://github.com/mthiagoalves?tab=repositories" target="_blank"> GitHub </a>`;
   proj1.innerHTML = ` <a href="https://mthiagoalves.github.io/Projeto01_Mod02/" target="_blank" style="text-decoration: none; color: #fff">Project 01</a>`;
   proj2.innerHTML = ` <a href="https://pokedex-blue-proj-02.herokuapp.com" target="_blank" style="text-decoration: none; color: #fff">Project 02</a>`;
@@ -85,25 +98,27 @@ translationPt = () => {
   textKnow.textContent =
     "Aqui vou passar as tecnologias que tenho conhecimento";
   javasript.innerHTML =
-    "Level: Intermediate<br /><br />I developed my projects including this portfolio using JavaScript";
+    "Nivel: Intermediario<br /><br />Desenvolvi meus projetos inclusive esse portifólio usando o JavaScript";
   node.innerHTML =
-    "Level: Intermediate<br /><br />I am currently using Node.Js in backend of all my projects.";
+    "Nivel: Intermediario<br /><br />Atualmente estou usando o Node.Js no back-end de todos os meus projetos.";
   html.innerHTML =
-    "Level: Intermediate<br /><br />Using HTML5 I developed all front-end structure of my projects.";
+    "Nivel: Intermediario<br /><br />Usando o HTML5 eu desenvolvi toda estrutura front-end dos meus projetos.";
   css.innerHTML =
-    "Level: Intermediate<br /><br />Along with HTML, I have been using pure CSS3 to make my projects so far.";
+    "Nivel: Intermediario<br /><br />Junto com o HTML, tenho vindo usado o CSS3 puro para fazer meus projetos até o momento.";
   db.innerHTML =
-    "Level: Beginner<br /><br />Some of my projects were using the database, PostgreSQL and MongoDb along with the backend. And API consumption.";
-  titleWorks.textContent = "Recents Works";
-  worksText.innerHTML = `Here are my main projects so far. I only selected some, the others can be accessed through my<a href="https://github.com/mthiagoalves?tab=repositories" target="_blank"> GitHub </a>`;
-  proj1.innerHTML = ` <a href="https://mthiagoalves.github.io/Projeto01_Mod02/" target="_blank" style="text-decoration: none; color: #fff">Project 01</a>`;
-  proj2.innerHTML = ` <a href="https://pokedex-blue-proj-02.herokuapp.com" target="_blank" style="text-decoration: none; color: #fff">Project 02</a>`;
-  proj3.innerHTML = ` <a href="https://mod2-proj-final.herokuapp.com" target="_blank" style="text-decoration: none; color: #fff">Project 03</a>`;
-  proj4.innerHTML = ` <a href="https://github.com/mthiagoalves/projeto01_mod03" target="_blank" style="text-decoration: none; color: #fff">Project 04</a>`;
-  proj5.innerHTML = ` <a href="https://mthiagoalves.github.io/Slideshow/" target="_blank" style="text-decoration: none; color: #fff">Project 05</a>`;
+    "Nivel: Iniciante<br /><br />Alguns dos meus projetos foi usando o banco de dados, PostgreSQL e MongoDb juntamente com o back-end. E consumo de API.";
+  react.innerHTML =
+    "Nivel: Iniciante<br /><br />Estou começando os meus estudos no react atualmente.";
+  titleWorks.textContent = "Projetos Recentes";
+  worksText.innerHTML = `Aqui tem os meus principais projetos até o momento. Selecionei somente alguns, os demais pode ser acessado atravez do meus <a href="https://github.com/mthiagoalves?tab=repositories" target="_blank"> GitHub </a>`;
+  proj1.innerHTML = ` <a href="https://mthiagoalves.github.io/Projeto01_Mod02/" target="_blank" style="text-decoration: none; color: #fff">Projeto 01</a>`;
+  proj2.innerHTML = ` <a href="https://pokedex-blue-proj-02.herokuapp.com" target="_blank" style="text-decoration: none; color: #fff">Projeto 02</a>`;
+  proj3.innerHTML = ` <a href="https://mod2-proj-final.herokuapp.com" target="_blank" style="text-decoration: none; color: #fff">Projeto 03</a>`;
+  proj4.innerHTML = ` <a href="https://github.com/mthiagoalves/projeto01_mod03" target="_blank" style="text-decoration: none; color: #fff">Projeto 04</a>`;
+  proj5.innerHTML = ` <a href="https://mthiagoalves.github.io/Slideshow/" target="_blank" style="text-decoration: none; color: #fff">Projeto 05</a>`;
   titleContact.textContent = "Contact me";
   contactText.textContent =
-    "If you found all the content above interesting and about me too and want to contact me these are my contacts.";
-  phone.textContent = "My phone number: +55 24 98113-1355";
-  linkedin.innerHTML = `<a href="https://www.linkedin.com/in/thiago-alves-b05ab2b0" target="_blank" style="text-decoration: none; color: #fff"> > My linkedin < </a>`;
+    "Se achou interessante todo o conteudo acima e sobre mim também e quiser entrar em contato comigo esses são meus contatos.";
+  phone.textContent = "Meu numero: +55 24 98113-1355";
+  linkedin.innerHTML = `<a href="https://www.linkedin.com/in/thiago-alves-b05ab2b0" target="_blank" style="text-decoration: none; color: #fff"> > Meu linkedin < </a>`;
 };
