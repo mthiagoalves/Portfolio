@@ -6,21 +6,22 @@ Aqui você pode ver e saber mais um pouco sobre mim e mostrar meus conhecimentos
 
 ## 👀 Vizualização
 
-Veja nossa deploy no [GitPages](https://mthiagoalves.github.io/Portfolio/)
+Veja o deploy no [GitPages](https://mthiagoalves.github.io/Portfolio/)
 
 ## 🚀 Começando
 
 Essas instruções permitirão que você obtenha uma cópia do projeto em operação na sua máquina local para fins de desenvolvimento e teste.
 
 ## 🛠️ Construído com
+
 * Linguagem - [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
 * Engine - [NodeJs](https://nodejs.org/en/docs/)
+* Engine - [HTML5](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
+* Engine - [CSS3](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
 
 ## ✒️ Autores
 
 * **Thiago Alves** - *Back-end e front-end* - [Linkedin](https://www.linkedin.com/in/thiago-alves-b05ab2b0/)
-
-
 
 ## 📄 Licença
 
